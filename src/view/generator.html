@@ -19,7 +19,6 @@
         <section id="section-display">
             <div>
                 <input id="inpPassword" readonly></input>
-                <button id="icoCopy"><img src="../assets/copy.svg" alt="[ Copiar ]"/></button>
                 <button id="icoReload"><img src="../assets/reload.svg" alt="[ Recarregar ]"/></button>
             </div>
             <div id="classifier"></div>
@@ -27,13 +26,14 @@
 
         <!-- MID SECTION (GENERATOR)       -->
         <section id="section-generator">
+            <label for="inpCount">Quantidade de Caracteres:</label>
             <div>
-                <input id="inpCount" type="range" min="3" max="64" step="1" value="10">
-                <span id="range-value"> = 10</span>
+                <input id="inpCount" type="range" min="3" max="64" step="1" value="16">
+                <span id="range-value"> = 16</span>
             </div>
             <div>
                 <input class="rdStyle" type="radio" value="1" name="rdStyle" id="rdStyle-1" checked> <label for="rdStyle-1"> Vale Tudo </label>
-                <input class="rdStyle" type="radio" value="2" name="rdStyle" id="rdStyle-2"> <label for="rdStyle-2"> Tira caracteres confusos (IliL10oO) </label>
+                <input class="rdStyle" type="radio" value="2" name="rdStyle" id="rdStyle-2"> <label for="rdStyle-2"> Tira caracteres confusos: "Il1, o0O" </label>
             </div>
             <div>
                 <input class="chkAlphabet" type="checkbox" name="chkAlphabet" id="minor" checked> <label for="minor"> letras minúsculas </label>

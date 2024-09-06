@@ -98,7 +98,7 @@ header h2 {
     background-color: transparent;
     outline: none;
     border: 0;   
-    cursor: default;
+    cursor: copy;
     font-weight: 500;
     font-size: 1.1em;
 }
@@ -108,7 +108,18 @@ header h2 {
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    transition: all .2s;
 }
+
+#section-display div button:hover{
+    transform: scale(1.2);
+}
+
+#section-display div button:active{
+    transition: all .05s;
+    transform: rotateZ(-90deg);
+}
+
 
 /* MID SECTION (GENERATOR)*/
 #section-generator {
@@ -129,8 +140,14 @@ header h2 {
     margin-top: 24px;
 }
 
+#section-generator label {
+    margin-bottom: -12px;
+    color: #282828;
+}
+
 #section-generator div span{
     font-weight: 600;
+    text-wrap: nowrap;
     color: #282828;
 }
 
@@ -185,7 +202,6 @@ header h2 {
 #section-copy-button button:active{
     filter: brightness(.75);
 }
-
 
 /* FOOTER */
 footer {
