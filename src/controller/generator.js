@@ -6,6 +6,7 @@ const spanCount      = document.getElementById("range-value");
 const arrRdStyle     = document.getElementsByClassName("rdStyle");
 const arrChkAlphabet = document.getElementsByClassName("chkAlphabet");
 const btnCopy        = document.getElementById("btnCopy");
+const classifier     = document.getElementById("classifier");
 
 let minor   = true;
 let major   = true; 
@@ -14,6 +15,16 @@ let symbols = true;
 let style   = 1;
 let count   = 10;
 let password = "";
+
+const checkPasswordStrength = () => {
+    if(password.length > 45 || symbols || (numbers && major)){
+        classifier.style.backgroundColor = "#00FF00";
+    } else if (password.length > 8 || numbers || major) {
+        classifier.style.backgroundColor = "#FFFF00";
+    } else {
+        classifier.style.backgroundColor = "#FF0000";
+    }
+}
 
 const generatePassword = () => {
     const alphabetMinor   = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -24,16 +35,16 @@ const generatePassword = () => {
     let usedAlphabet = [];
 
     if(minor) { 
-    usedAlphabet += alphabetMinor; 
+        usedAlphabet = usedAlphabet.concat(usedAlphabet, alphabetMinor); 
     }
     if(major) { 
-    usedAlphabet += alphatbetMajor; 
+        usedAlphabet = usedAlphabet.concat(usedAlphabet, alphatbetMajor); 
     }
     if(numbers) { 
-    usedAlphabet += alphabetNumbers; 
+        usedAlphabet = usedAlphabet.concat(usedAlphabet, alphabetNumbers); 
     }
     if(symbols) { 
-    usedAlphabet += alphabetSymbols; 
+        usedAlphabet = usedAlphabet.concat(usedAlphabet, alphabetSymbols); 
     }
 
     let pwd = "";
@@ -49,6 +60,7 @@ const generatePassword = () => {
 
     password = pwd;
     inpPassword.value = password;
+    checkPasswordStrength();
 }
 
 const copyPassword = () => {
