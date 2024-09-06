@@ -14,14 +14,40 @@
         <h2>Gerador de Senhas com Electron</h2>
     </header>
 
+    <section id="section-body">
     <!-- TOP SECTION (DISPLAY)         -->
-     <section id="section-display"></section>
+        <section id="section-display">
+            <div>
+                <input readonly></input>
+                <button><img src="../assets/copy.svg" alt="[ Copiar ]"/></button>
+                <button><img src="../assets/reload.svg" alt="[ Recarregar ]"/></button>
+            </div>
+            <div id="classifier"></div>
+        </section>
 
-    <!-- MID SECTION (GENERATOR)       -->
-    <section id="section-generator"></section>
+        <!-- MID SECTION (GENERATOR)       -->
+        <section id="section-generator">
+            <div>
+                <input type="range" min="3" max="64" step="1" value="10">
+                <span id="range-value"> = 64</span>
+            </div>
+            <div>
+                <input type="radio" name="rdEstilo" id="rdEstilo-1" checked> <label for="rdEstilo-1"> Vale Tudo </label>
+                <input type="radio" name="rdEstilo" id="rdEstilo-2"> <label for="rdEstilo-2"> Tira caracteres confusos (IliL10oO) </label>
+            </div>
+            <div>
+                <input type="checkbox" name="chkAlfabeto" id="chkAlfabeto-1" checked> <label for="chkAlfabeto-1"> letras minúsculas </label>
+                <input type="checkbox" name="chkAlfabeto" id="chkAlfabeto-2" checked> <label for="chkAlfabeto-2"> LETRAS MAIÚSCULAS </label>
+                <input type="checkbox" name="chkAlfabeto" id="chkAlfabeto-3" checked> <label for="chkAlfabeto-3"> Núm3r0s </label>
+                <input type="checkbox" name="chkAlfabeto" id="chkAlfabeto-4" checked> <label for="chkAlfabeto-4"> *%#$@! </label>
+            </div>
+        </section>
 
-    <!-- BOTTOM SECTION (COPY BUTTON)  -->
-    <section id="section-copy-button"></section>
+        <!-- BOTTOM SECTION (COPY BUTTON)  -->
+        <section id="section-copy-button">
+            <button>COPIAR SENHA</button>
+        </section>
+    </section>
 
     <!-- FOOTER -->
     <footer><span> ༼ つ ◕_◕ ༽つ </span></footer>
