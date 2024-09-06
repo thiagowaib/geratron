@@ -26,5 +26,7 @@ Esse projeto é Open Source, e encorajamos você a baixar um clone para personal
 	
 
 <br>
+
 ---
+
 ![Geratron: Gerador de Senhas com Electron](https://github.com/thiagowaib/geratron/blob/main/.github/frame1.png?raw=true)

@@ -157,4 +157,3 @@ btnCopy.onclick = () => {
 window.onload = () => {
     generatePassword();
 }
-
