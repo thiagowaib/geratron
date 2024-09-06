@@ -1,0 +1,67 @@
+/* DEFINIÇÃO DAS FONTES CUSTOMIZADAS */
+@font-face {
+    font-family: montserrat;
+    src: url(../assets/fonts/Montserrat-Light.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../assets/fonts/Montserrat-LightItalic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+    font-weight: 500;
+}
+body{
+    font-family: montserrat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {
+    font-weight: 600;
+    color: #65558F;
+    margin: 0;
+}
+
+header h2 {
+    font-weight: 400;
+    font-style: italic;
+    color: #282828;
+    margin: 0;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    color: #28282880;
+}

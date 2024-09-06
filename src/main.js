@@ -2,11 +2,16 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
 
+//Tenta carregar o electron-reloader
+try {
+  require('electron-reloader')(module)
+} catch (_) {}
+
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1024,
+    height: 768,
     icon: __dirname + './assets/icon.png',
     movable: true,
     resizable: false,
@@ -18,7 +23,7 @@ const createWindow = () => {
   mainWindow.removeMenu();
 
   // and load the index.html of the app.
-  mainWindow.loadFile('./generator.html')
+  mainWindow.loadFile('./src/view/generator.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
