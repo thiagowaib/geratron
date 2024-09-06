@@ -15,6 +15,8 @@
 
 ## Ambiente de Desenvolvimento
 Esse projeto é Open Source, e encorajamos você a baixar um clone para personalizar e explorar o potêncial de um aplicativo Electron gerador de senhas. Para subir o ambiente local, é necessário ter instalado o NodeJs, e com isso executar os seguintes comandos na raíz do projeto.
+> Para acessar o fonte TEMPLATE para o workshop desenvolvido durante o Tech Summit Unimar 2024: https://github.com/thiagowaib/geratron/releases/tag/v1.0.1-template
+
     # Instalar as dependências do projeto
     npm install 
     
