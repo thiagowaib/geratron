@@ -1,0 +1,21 @@
+{
+  "name": "geratron",
+  "version": "1.0.0",
+  "description": "Aplicativo desktop gerador de senhas seguras, construído utilizando Electron.",
+  "main": "src/main.js",
+  "build": {
+    "appId": "geratron",
+    "icon": "src/assets/icon.png"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5"
+  }
+}
